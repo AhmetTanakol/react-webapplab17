@@ -57,6 +57,14 @@
 					"type": "string"
 				}
 			}
+		},
+		"dateAndTimeOfParty": {
+			"type": "string",
+			"format": "date-time"
+		},
+		"timeOfArrival": {
+			"type": "string",
+			"format": "time"
 		}
 	}
 }
