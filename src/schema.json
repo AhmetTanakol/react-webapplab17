@@ -1,0 +1,91 @@
+{
+	"type": "object",
+	"properties": {
+		"firstName": {
+			"type": "string",
+			"minLength": 2,
+			"maxLength": 20
+		},
+		"lastName": {
+			"type": "string",
+			"minLength": 5,
+			"maxLength": 15
+		},
+		"personalData": {
+			"type": "object",
+			"properties": {
+				"age": {
+					"type": "integer",
+					"minimum": 18,
+					"maximum": 100
+				},
+				"height": {
+					"type": "number"
+				}
+			},
+			"required": ["age", "height"]
+		},
+		"gender": {
+			"type": "string",
+			"enum": [
+				"Male",
+				"Female",
+				"Undisclosed"
+			]
+		},
+		"dateOfBirth": {
+			"type": "string",
+			"format": "date"
+		},
+		"weigth": {
+			"type": "number",
+			"minimum": 1,
+			"maximum": 100
+		},
+		"drivingSkill": {
+			"type": "integer",
+			"minimum": 1,
+			"maximum": 10
+		},
+		"rating": {
+			"type": "integer"
+		},
+		"committer": {
+			"type": "boolean"
+		},
+		"address": {
+			"type": "object",
+			"properties": {
+				"street": {
+					"type": "string"
+				},
+				"streetnumber": {
+					"type": "string"
+				},
+				"postalCode": {
+					"type": "string"
+				},
+				"city": {
+					"type": "string"
+				}
+			}
+		},
+		"dateAndTimeOfParty": {
+			"type": "string",
+			"format": "date-time"
+		},
+		"timeOfArrival": {
+			"type": "string",
+			"format": "time"
+		},
+		"streetnumber": {
+			"type": "string",
+			"maxLength": 4
+		},
+		"postalCode": {
+			"type": "string",
+			"maxLength": 5
+		}
+	},
+	"required": ["firstName", "lastName", "age", "gender"]
+}
