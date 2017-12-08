@@ -1,57 +1,40 @@
 {
 	"type": "object",
 	"properties": {
-		"firstName": {
-			"type": "string",
-			"minLength": 2,
-			"maxLength": 20
-		},
-		"lastName": {
-			"type": "string",
-			"minLength": 5,
-			"maxLength": 15
-		},
 		"personalData": {
 			"type": "object",
 			"properties": {
+				"firstName": {
+					"type": "string",
+					"minLength": 2,
+					"maxLength": 20
+				},
+				"lastName": {
+					"type": "string",
+					"minLength": 5,
+					"maxLength": 15
+				},
 				"age": {
-					"type": "integer",
-					"minimum": 18,
-					"maximum": 100
+					"type": "integer"
 				},
 				"height": {
 					"type": "number"
+				},
+				"gender": {
+					"type": "string",
+					"enum": [
+						"Male",
+						"Female",
+						"Undisclosed"
+					]
+				},
+				"drivingSkill": {
+					"type": "integer",
+					"minimum": 1,
+					"maximum": 10
 				}
 			},
-			"required": ["age", "height"]
-		},
-		"gender": {
-			"type": "string",
-			"enum": [
-				"Male",
-				"Female",
-				"Undisclosed"
-			]
-		},
-		"dateOfBirth": {
-			"type": "string",
-			"format": "date"
-		},
-		"weigth": {
-			"type": "number",
-			"minimum": 1,
-			"maximum": 100
-		},
-		"drivingSkill": {
-			"type": "integer",
-			"minimum": 1,
-			"maximum": 10
-		},
-		"rating": {
-			"type": "integer"
-		},
-		"committer": {
-			"type": "boolean"
+			"required": ["firstName", "lastName"]
 		},
 		"address": {
 			"type": "object",
@@ -60,32 +43,17 @@
 					"type": "string"
 				},
 				"streetnumber": {
-					"type": "string"
+					"type": "string",
+					"maxLength": 4
 				},
 				"postalCode": {
-					"type": "string"
+					"type": "string",
+					"maxLength": 5
 				},
 				"city": {
 					"type": "string"
 				}
 			}
-		},
-		"dateAndTimeOfParty": {
-			"type": "string",
-			"format": "date-time"
-		},
-		"timeOfArrival": {
-			"type": "string",
-			"format": "time"
-		},
-		"streetnumber": {
-			"type": "string",
-			"maxLength": 4
-		},
-		"postalCode": {
-			"type": "string",
-			"maxLength": 5
 		}
-	},
-	"required": ["firstName", "lastName", "age", "gender"]
+	}
 }

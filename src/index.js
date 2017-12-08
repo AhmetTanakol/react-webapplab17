@@ -12,8 +12,8 @@ import RatingControl, { ratingControlTester } from "./rating.control";
 import { materialize } from 'jsonforms-inferno/dist/ts-build/renderers/materialized';
 
 const store = initJsonFormsStore({
-  firstName: "Max",
-  personalData: {}
+  personalData: {},
+  address: {}
 }, schema, uischema);
 
 materialize();

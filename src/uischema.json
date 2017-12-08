@@ -2,139 +2,68 @@
 	"type": "VerticalLayout",
 	"elements": [
 		{
-			"type": "HorizontalLayout",
+			"type": "Group",
+			"label": "Personal Information",
 			"elements": [
 				{
-					"type": "Control",
-					"scope": {
-						"$ref": "#/properties/firstName"
-					}
+					"type": "HorizontalLayout",
+					"elements": [
+						{
+							"type": "Control",
+							"scope": {
+								"$ref": "#/properties/personalData/properties/firstName"
+							},
+							"options": {
+								"focus": true
+							}
+						},
+						{
+							"type": "Control",
+							"scope": {
+								"$ref": "#/properties/personalData/properties/lastName"
+							}
+						}
+					]
 				},
 				{
-					"type": "Control",
-					"scope": {
-						"$ref": "#/properties/lastName"
-					},
-					"options": {
-						"focus": true
-					}
-				}
-			]
-		},
-		{
-			"type": "HorizontalLayout",
-			"elements": [
-				{
-					"type": "Control",
-					"scope": {
-						"$ref": "#/properties/streetnumber"
-					},
-					"options": {
-						"trim": true,
-						"restrict": false
-					}
+					"type": "HorizontalLayout",
+					"elements": [
+						{
+							"type": "Control",
+							"scope": {
+								"$ref": "#/properties/personalData/properties/age"
+							}
+						},
+						{
+							"type": "Control",
+							"scope": {
+								"$ref": "#/properties/personalData/properties/height"
+							}
+						}
+					]
 				},
 				{
-					"type": "Control",
-					"scope": {
-						"$ref": "#/properties/postalCode"
-					},
-					"options": {
-						"trim": true,
-						"restrict": true
-					}
-				}
-			]
-		},
-		{
-			"type": "HorizontalLayout",
-			"elements": [
-				{
-					"type": "Control",
-					"scope": {
-						"$ref": "#/properties/personalData/properties/age"
-					}
-				},
-				{
-					"type": "Control",
-					"scope": {
-						"$ref": "#/properties/dateOfBirth"
-					}
-				}
-			]
-		},
-		{
-			"type": "HorizontalLayout",
-			"elements": [
-				{
-					"type": "Control",
-					"scope": {
-						"$ref": "#/properties/dateAndTimeOfParty"
-					}
-				},
-				{
-					"type": "Control",
-					"scope": {
-						"$ref": "#/properties/timeOfArrival"
-					}
-				}
-			]
-		},
-		{
-			"type": "HorizontalLayout",
-			"elements": [
-				{
-					"type": "Control",
-					"scope": {
-						"$ref": "#/properties/personalData/properties/height"
-					}
-				},
-				{
-					"type": "Control",
-					"scope": {
-						"$ref": "#/properties/gender"
-					}
-				},
-				{
-					"type": "Control",
-					"scope": {
-						"$ref": "#/properties/rating"
-					}
-				},
-				{
-					"type": "Control",
-					"scope": {
-						"$ref": "#/properties/committer"
-					}
-				}
-			]
-		},
-		{
-			"type": "HorizontalLayout",
-			"elements": [
-				{
-					"type": "Control",
-					"scope": {
-						"$ref": "#/properties/weigth"
-					},
-					"options": {
-						"slider": true
-					}
-				},
-				{
-					"type": "Control",
-					"scope": {
-						"$ref": "#/properties/drivingSkill"
-					},
-					"options": {
-						"slider": true
-					}
+					"type": "HorizontalLayout",
+					"elements": [
+						{
+							"type": "Control",
+							"scope": {
+								"$ref": "#/properties/personalData/properties/gender"
+							}
+						},
+						{
+							"type": "Control",
+							"scope": {
+								"$ref": "#/properties/personalData/properties/drivingSkill"
+							}
+						}
+					]
 				}
 			]
 		},
 		{
 			"type": "Group",
-			"label": "Address for Shipping T-Shirt",
+			"label": "Address Information",
 			"elements": [
 				{
 					"type": "HorizontalLayout",
@@ -148,7 +77,7 @@
 						{
 							"type": "Control",
 							"scope": {
-								"$ref": "#/properties/address/properties/streetnumber"
+								"$ref": "#/properties/address/properties/city"
 							}
 						}
 					]
@@ -159,28 +88,26 @@
 						{
 							"type": "Control",
 							"scope": {
-								"$ref": "#/properties/address/properties/postalCode"
+								"$ref": "#/properties/address/properties/streetnumber"
+							},
+							"options": {
+								"trim": true,
+								"restrict": false
 							}
 						},
 						{
 							"type": "Control",
 							"scope": {
-								"$ref": "#/properties/address/properties/city"
+								"$ref": "#/properties/address/properties/postalCode"
+							},
+							"options": {
+								"trim": true,
+								"restrict": true
 							}
 						}
 					]
 				}
-			],
-			"rule": {
-				"effect": "SHOW",
-				"condition": {
-					"type": "LEAF",
-					"scope": {
-						"$ref": "#/properties/committer"
-					},
-					"expectedValue": true
-				}
-			}
+			]
 		}
 	]
 }

@@ -10,19 +10,18 @@ import { connect } from 'react-redux';
 import { getData } from 'jsonforms-inferno/dist/ts-build/reducers';
 
 class App extends Component {
-
   render() {
+    const divStyle = {
+      color: 'white'
+    };
     return (
       <div className="App">
         <header className="App-header">
-          <Logo />
+          <p style={divStyle}> Web App Lab 17</p>
         </header>
-        <h1>{`Welcome to JSON Forms 2`}</h1>
         <p className="App-intro">
           More Forms. Less Code.
         </p>
-        Bound data:
-        <pre>{this.props.dataAsString}</pre>
         <div className="demoform">
           <JsonFormsRenderer
             schema={schema}
