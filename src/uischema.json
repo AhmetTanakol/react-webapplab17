@@ -88,11 +88,7 @@
 						{
 							"type": "Control",
 							"scope": {
-								"$ref": "#/properties/address/properties/streetnumber"
-							},
-							"options": {
-								"trim": true,
-								"restrict": false
+								"$ref": "#/properties/address/properties/province"
 							}
 						},
 						{

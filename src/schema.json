@@ -42,9 +42,12 @@
 				"street": {
 					"type": "string"
 				},
-				"streetnumber": {
+				"province": {
 					"type": "string",
-					"maxLength": 4
+					"enum": ["Baden-Württemberg", "Bavaria", "Berlin", "Brandenburg", "Bremen", "Hamburg",
+						"Hessen", "Niedersachsen", "Mecklenburg-Vorpommern", "Nordrhein-Westfalen",
+						"Rheinland-Pfalz", "Saarland", "Sachsen", "Sachsen-Anhalt", "Schleswig-Holstein",
+						"Thüringen"]
 				},
 				"postalCode": {
 					"type": "string",
