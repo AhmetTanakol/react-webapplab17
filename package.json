@@ -3,7 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "jsonforms-inferno": "file:jsonforms-inferno-2.1.0-alpha.3.tgz",
+    "jsonforms-core": "file:jsonforms-core-2.1.0.tgz",
+    "jsonforms-materialized": "file:jsonforms-materialized-2.1.0.tgz",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "react-redux": "^5.0.6",
