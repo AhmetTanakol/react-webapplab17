@@ -4,11 +4,11 @@ import Logo from './logo';
 import './App.css';
 import schema from './schema.json';
 import uischema from './uischema.json';
-import JsonFormsRenderer from 'jsonforms-core/dist/ts-build/renderers/dispatch-renderer'
-import 'jsonforms-core/dist/ts-build/renderers';
-import 'jsonforms-materialized/dist/ts-build';
+import JsonFormsRenderer from '@jsonforms/core';
+import '@jsonforms/core';
+import '@jsonforms/material-renderers';
 import { connect } from 'react-redux';
-import { getData } from 'jsonforms-core/dist/ts-build/reducers';
+import { getData } from '@jsonforms/core';
 
 class App extends Component {
 

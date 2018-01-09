@@ -6,8 +6,8 @@ import App from './App';
 import registerServiceWorker from './registerServiceWorker';
 import schema from './schema.json';
 import uischema from './uischema.json';
-import { initJsonFormsStore } from 'jsonforms-core/dist/ts-build/store';
-import { materialize } from 'jsonforms-materialized/dist/ts-build';
+import { initJsonFormsStore } from '@jsonforms/core';
+import { materialize } from '@jsonforms/material-renderers';
 
 const store = initJsonFormsStore({
   firstName: "Max",
@@ -15,7 +15,7 @@ const store = initJsonFormsStore({
 }, schema, uischema);
 
 materialize();
-
+console.log(store.getState());
 ReactDOM.render(
   <Provider store={store}>
     <App />
