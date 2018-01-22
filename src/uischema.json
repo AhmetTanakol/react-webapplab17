@@ -111,13 +111,6 @@
 					"scope": {
 						"$ref": "#/properties/rating"
 					}
-				},
-				{
-					"type": "Control",
-					"label": "%committer",
-					"scope": {
-						"$ref": "#/properties/committer"
-					}
 				}
 			]
 		},
@@ -188,17 +181,7 @@
 						}
 					]
 				}
-			],
-			"rule": {
-				"effect": "SHOW",
-				"condition": {
-					"type": "LEAF",
-					"scope": {
-						"$ref": "#/properties/committer"
-					},
-					"expectedValue": true
-				}
-			}
+			]
 		}
 	]
 }

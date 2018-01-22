@@ -3,8 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@jsonforms/core": "file:jsonforms-core-2.0.0-beta.4.tgz",
-    "@jsonforms/material-renderers": "file:jsonforms-material-renderers-2.0.0-beta.4.tgz",
+    "@jsonforms/core": "file:jsonforms-core-2.0.0-beta.5.tgz",
+    "@jsonforms/material-renderers": "file:jsonforms-material-renderers-2.0.0-beta.5.tgz",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "react-redux": "^5.0.6",

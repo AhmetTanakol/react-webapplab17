@@ -25,7 +25,8 @@ const translations = {
     weight: 'Weight',
     drivingskill: 'Driving Skill',
     street: 'Street',
-    city: 'City'
+    city: 'City',
+    namedescription: 'Enter your first name'
   },
   'de-DE': {
     firstname: 'Vorname',
@@ -43,14 +44,20 @@ const translations = {
     weight: 'Gewicht',
     drivingskill: 'Fahrkünste',
     street: 'Strasse',
-    city: 'Stadt'
+    city: 'Stadt',
+    namedescription: 'Geben Sie Ihren Vornamen ein'
   }
 };
 
-const store = initJsonFormsStore({
-  firstName: "Max",
-  personalData: {}
-}, schema, uischema, translations);
+const initialState = {
+  data: {
+    firstName: "Max", personalData: {}
+  },
+  schema: schema,
+  uischema: uischema,
+  translations: translations
+};
+const store = initJsonFormsStore(initialState);
 
 ReactDOM.render(
   <Provider store={store}>

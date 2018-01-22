@@ -5,7 +5,7 @@
 			"type": "string",
 			"minLength": 2,
 			"maxLength": 20,
-			"description": "Enter your first name"
+			"description": "%namedescription"
 		},
 		"lastName": {
 			"type": "string",
@@ -50,9 +50,6 @@
 		},
 		"rating": {
 			"type": "integer"
-		},
-		"committer": {
-			"type": "boolean"
 		},
 		"address": {
 			"type": "object",
