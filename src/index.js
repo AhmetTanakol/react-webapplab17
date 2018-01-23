@@ -7,6 +7,7 @@ import registerServiceWorker from './registerServiceWorker';
 import schema from './schema.json';
 import uischema from './uischema.json';
 import { initJsonFormsStore } from '@jsonforms/core';
+import * as JsonRefs from 'json-refs';
 
 const translations = {
   'en-US': {
@@ -57,12 +58,23 @@ const initialState = {
   uischema: uischema,
   translations: translations
 };
-const store = initJsonFormsStore(initialState);
 
-ReactDOM.render(
-  <Provider store={store}>
-    <App />
-  </Provider>,
-  document.getElementById('app'));
+JsonRefs
+  .resolveRefs(initialState.schema, {includeInvalid: true})
+  .then(result => {
+    const resolvedSchema = result.resolved;
+    const store = initJsonFormsStore({
+      ...initialState,
+      data: initialState.data,
+      schema: resolvedSchema,
+      uischema: initialState.uischema,
+      translations: initialState.translations
+    });
+    ReactDOM.render(
+      <Provider store={store}>
+        <App />
+      </Provider>,
+      document.getElementById('app'));
+  });
 
 registerServiceWorker();

@@ -5,7 +5,7 @@ import './App.css';
 import schema from './schema.json';
 import uischema from './uischema.json';
 import JsonFormsRenderer from '@jsonforms/core';
-import '@jsonforms/core';
+import { DispatchRenderer } from '@jsonforms/core';
 import '@jsonforms/material-renderers';
 import { connect } from 'react-redux';
 import { getData } from '@jsonforms/core';
@@ -25,9 +25,7 @@ class App extends Component {
         Bound data:
         <pre>{this.props.dataAsString}</pre>
         <div className="demoform">
-          <JsonFormsRenderer
-            schema={schema}
-            uischema={uischema}
+          <DispatchRenderer
           />
         </div>
       </div>

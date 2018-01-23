@@ -7,16 +7,12 @@
 				{
 					"type": "Control",
 					"label": "%firstname",
-					"scope": {
-						"$ref": "#/properties/firstName"
-					}
+					"scope": "#/properties/firstName"
 				},
 				{
 					"type": "Control",
 					"label": "%lastname",
-					"scope": {
-						"$ref": "#/properties/lastName"
-					},
+					"scope": "#/properties/lastName",
 					"options": {
 						"focus": true
 					}
@@ -29,9 +25,7 @@
 				{
 					"type": "Control",
 					"label": "%streetnumber",
-					"scope": {
-						"$ref": "#/properties/streetnumber"
-					},
+					"scope": "#/properties/streetnumber",
 					"options": {
 						"trim": true,
 						"restrict": false
@@ -40,9 +34,7 @@
 				{
 					"type": "Control",
 					"label": "%postalcode",
-					"scope": {
-						"$ref": "#/properties/postalCode"
-					},
+					"scope": "#/properties/postalCode",
 					"options": {
 						"trim": true,
 						"restrict": true
@@ -56,16 +48,12 @@
 				{
 					"type": "Control",
 					"label": "%age",
-					"scope": {
-						"$ref": "#/properties/personalData/properties/age"
-					}
+					"scope": "#/properties/personalData/properties/age"
 				},
 				{
 					"type": "Control",
 					"label": "%dateofbirth",
-					"scope": {
-						"$ref": "#/properties/dateOfBirth"
-					}
+					"scope": "#/properties/dateOfBirth"
 				}
 			]
 		},
@@ -75,16 +63,12 @@
 				{
 					"type": "Control",
 					"label": "%dateandtimeofparty",
-					"scope": {
-						"$ref": "#/properties/dateAndTimeOfParty"
-					}
+					"scope": "#/properties/dateAndTimeOfParty"
 				},
 				{
 					"type": "Control",
 					"label": "%timeofarrival",
-					"scope": {
-						"$ref": "#/properties/timeOfArrival"
-					}
+					"scope": "#/properties/timeOfArrival"
 				}
 			]
 		},
@@ -94,23 +78,17 @@
 				{
 					"type": "Control",
 					"label": "%height",
-					"scope": {
-						"$ref": "#/properties/personalData/properties/height"
-					}
+					"scope": "#/properties/personalData/properties/height"
 				},
 				{
 					"type": "Control",
 					"label": "%gender",
-					"scope": {
-						"$ref": "#/properties/gender"
-					}
+					"scope": "#/properties/gender"
 				},
 				{
 					"type": "Control",
 					"label": "%rating",
-					"scope": {
-						"$ref": "#/properties/rating"
-					}
+					"scope": "#/properties/rating"
 				}
 			]
 		},
@@ -120,9 +98,7 @@
 				{
 					"type": "Control",
 					"label": "%weight",
-					"scope": {
-						"$ref": "#/properties/weight"
-					},
+					"scope": "#/properties/weight",
 					"options": {
 						"slider": true
 					}
@@ -130,9 +106,7 @@
 				{
 					"type": "Control",
 					"label": "%drivingskill",
-					"scope": {
-						"$ref": "#/properties/drivingSkill"
-					},
+					"scope": "#/properties/drivingSkill",
 					"options": {
 						"slider": true
 					}
@@ -149,16 +123,12 @@
 						{
 							"type": "Control",
 							"label": "%street",
-							"scope": {
-								"$ref": "#/properties/address/properties/street"
-							}
+							"scope": "#/properties/address/properties/street"
 						},
 						{
 							"type": "Control",
 							"label": "%streetnumber",
-							"scope": {
-								"$ref": "#/properties/address/properties/streetnumber"
-							}
+							"scope": "#/properties/address/properties/streetnumber"
 						}
 					]
 				},
@@ -168,16 +138,12 @@
 						{
 							"type": "Control",
 							"label": "%postalcode",
-							"scope": {
-								"$ref": "#/properties/address/properties/postalCode"
-							}
+							"scope": "#/properties/address/properties/postalCode"
 						},
 						{
 							"type": "Control",
 							"label": "%city",
-							"scope": {
-								"$ref": "#/properties/address/properties/city"
-							}
+							"scope": "#/properties/address/properties/city"
 						}
 					]
 				}
