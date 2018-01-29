@@ -6,7 +6,9 @@ import App from './App';
 import registerServiceWorker from './registerServiceWorker';
 import schema from './schema.json';
 import uischema from './uischema.json';
-import { createJsonFormsStore } from './store';
+import { applyMiddleware, createStore } from 'redux';
+import thunk from 'redux-thunk';
+import { Actions, JsonForms, jsonformsReducer } from '@jsonforms/core';
 
 const translations = {
   'en-US': {
@@ -91,14 +93,36 @@ const translations = {
   }
 };
 
-const initialState = {
-  data: {
+const store = createStore(
+  jsonformsReducer(),
+  {
+    jsonforms: {
+      common: {
+        data: {},
+        schema,
+        uischema,
+      },
+      renderers: JsonForms.renderers,
+      fields: JsonForms.fields,
+      i18n: {
+        translations
+      }
+    }
   },
-  schema: schema,
-  uischema: uischema,
-  translations: translations
-};
-const store = createJsonFormsStore(initialState);
+  applyMiddleware(thunk)
+);
+store.dispatch({
+  type: Actions.INIT,
+  data: {},
+  schema,
+  uischema
+});
+store.dispatch(Actions.validate());
+
+store.dispatch({
+  type: Actions.SET_LOCALE
+});
+
 
 ReactDOM.render(
   <Provider store={store}>
