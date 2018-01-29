@@ -9,6 +9,7 @@ import uischema from './uischema.json';
 import { applyMiddleware, createStore } from 'redux';
 import thunk from 'redux-thunk';
 import { Actions, JsonForms, jsonformsReducer } from '@jsonforms/core';
+import '@jsonforms/material-renderers';
 
 const translations = {
   'en-US': {
@@ -49,7 +50,10 @@ const translations = {
     auctionStarts: 'Auction starts',
     auctionEnds: 'Auction ends',
     numberOfBidders: 'Number of bidders',
-    secondHandDescription: 'Whether this item is second-hand or new'
+    secondHandDescription: 'Whether this item is second-hand or new',
+    cancelLabel: 'Cancel',
+    clearLabel: 'Clear',
+    namedescription: 'Please Enter Your Name'
   },
   'de-DE': {
     name: 'Name',
@@ -89,7 +93,10 @@ const translations = {
     auctionStarts: 'Auktion beginnt am',
     auctionEnds: 'Auktion endet am',
     numberOfBidders: 'Anzahl der Gebote',
-    secondHandDescription: 'Ob dieser Artikel gebraucht oder neu ist'
+    secondHandDescription: 'Ob dieser Artikel gebraucht oder neu ist',
+    cancelLabel: 'ABBRECHEN',
+    clearLabel: 'LÖSCHEN',
+    namedescription: 'Bitte geben Sie Ihren Namen ein'
   }
 };
 
@@ -118,16 +125,13 @@ store.dispatch({
   uischema
 });
 store.dispatch(Actions.validate());
-
 store.dispatch({
-  type: Actions.SET_LOCALE
+  type: Actions.SET_LOCALE,
+  locale: undefined
 });
-
-
 ReactDOM.render(
   <Provider store={store}>
     <App />
   </Provider>,
   document.getElementById('app'));
-
 registerServiceWorker();

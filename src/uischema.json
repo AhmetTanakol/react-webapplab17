@@ -4,7 +4,7 @@
 		{
 			"type": "Categorization",
 			"label": "Description",
-			"elements": [	
+			"elements": [
 				{
 					"type": "Category",
 					"label": "General",
@@ -17,11 +17,13 @@
 									"elements": [
 										{
 											"type": "Control",
-											"scope":  "#/properties/name"
+											"scope":  "#/properties/name",
+											"label": "%name"
 										},
 										{
 											"type": "Control",
 											"scope": "#/properties/description",
+											"label": "%description",
 											"options": {
 												"multi": true
 											}
@@ -38,7 +40,8 @@
 									"elements": [
 										{
 											"type": "Control",
-											"scope": "#/properties/secondHand"
+											"scope": "#/properties/secondHand",
+											"label": "%secondHand"
 										}
 									]
 								}
@@ -58,11 +61,13 @@
 									"elements": [
 										{
 											"type": "Control",
-											"scope": "#/properties/numberOfPages"
+											"scope": "#/properties/numberOfPages",
+											"label": "%numberOfPages"
 										},
 										{
 											"type": "Control",
-											"scope": "#/properties/author"
+											"scope": "#/properties/author",
+											"label": "%author"
 										}
 									]
 								}
@@ -76,11 +81,13 @@
 									"elements": [
 										{
 											"type": "Control",
-											"scope": "#/properties/publisher"
+											"scope": "#/properties/publisher",
+											"label": "%publisher"
 										},
 										{
 											"type": "Control",
-											"scope": "#/properties/language"
+											"scope": "#/properties/language",
+											"label": "%language"
 										}
 									]
 								}
@@ -94,11 +101,13 @@
 									"elements": [
 										{
 											"type": "Control",
-											"scope": "#/properties/ISBNnumber"
+											"scope": "#/properties/ISBNnumber",
+											"label": "%ISBNnumber"
 										},
 										{
 											"type": "Control",
-											"scope": "#/properties/ageRestriction"
+											"scope": "#/properties/ageRestriction",
+											"label": "%ageRestriction"
 										}
 									]
 								}
@@ -118,11 +127,13 @@
 									"elements": [
 										{
 											"type": "Control",
-											"scope": "#/properties/size"
+											"scope": "#/properties/size",
+											"label": "%size"
 										},
 										{
 											"type": "Control",
-											"scope": "#/properties/color"
+											"scope": "#/properties/color",
+											"label": "%color"
 										}
 									]
 								}
@@ -136,11 +147,13 @@
 									"elements": [
 										{
 											"type": "Control",
-											"scope": "#/properties/material"
+											"scope": "#/properties/material",
+											"label": "%material"
 										},
 										{
 											"type": "Control",
-											"scope": "#/properties/sleeves"
+											"scope": "#/properties/sleeves",
+											"label": "%sleeves"
 										}
 									]
 								}
@@ -154,11 +167,13 @@
 									"elements": [
 										{
 											"type": "Control",
-											"scope": "#/properties/collarShape"
+											"scope": "#/properties/collarShape",
+											"label": "%collarShape"
 										},
 										{
 											"type": "Control",
-											"scope": "#/properties/washingNotes"
+											"scope": "#/properties/washingNotes",
+											"label": "%washingNotes"
 										}
 									]
 								}
@@ -184,11 +199,13 @@
 									"elements": [
 										{
 											"type": "Control",
-											"scope": "#/properties/price"
+											"scope": "#/properties/price",
+											"label": "%price"
 										},
 										{
 											"type": "Control",
-											"scope": "#/properties/shippingPrice"
+											"scope": "#/properties/shippingPrice",
+											"label": "%shippingPrice"
 										}
 									]
 								}
@@ -202,11 +219,13 @@
 									"elements": [
 										{
 											"type": "Control",
-											"scope": "#/properties/generalDiscount"
+											"scope": "#/properties/generalDiscount",
+											"label": "%generalDiscount"
 										},
 										{
 											"type": "Control",
-											"scope": "#/properties/discountWithPromotionCode"
+											"scope": "#/properties/discountWithPromotionCode",
+											"label": "%discountWithPromotionCode"
 										}
 									]
 								}
@@ -226,11 +245,13 @@
 									"elements": [
 										{
 											"type": "Control",
-											"scope": "#/properties/deliverableOn"
+											"scope": "#/properties/deliverableOn",
+											"label": "%deliverableOn"
 										},
 										{
 											"type": "Control",
-											"scope": "#/properties/deliveryOptions"
+											"scope": "#/properties/deliveryOptions",
+											"label": "%deliveryOptions"
 										}
 									]
 								}
@@ -244,11 +265,13 @@
 									"elements": [
 										{
 											"type": "Control",
-											"scope": "#/properties/internationalShipping"
+											"scope": "#/properties/internationalShipping",
+											"label": "%internationalShipping"
 										},
 										{
 											"type": "Control",
-											"scope": "#/properties/soldOut"
+											"scope": "#/properties/soldOut",
+											"label": "%soldOut"
 										}
 									]
 								}
@@ -262,7 +285,8 @@
 									"elements": [
 										{
 											"type": "Control",
-											"scope": "#/properties/itemsInStock"
+											"scope": "#/properties/itemsInStock",
+											"label": "%itemsInStock"
 										}
 									]
 								}
@@ -282,11 +306,13 @@
 									"elements": [
 										{
 											"type": "Control",
-											"scope": "#/properties/brand"
+											"scope": "#/properties/brand",
+											"label": "%brand"
 										},
 										{
 											"type": "Control",
-											"scope": "#/properties/bestBefore"
+											"scope": "#/properties/bestBefore",
+											"label": "%bestBefore"
 										}
 									]
 								}
@@ -300,11 +326,13 @@
 									"elements": [
 										{
 											"type": "Control",
-											"scope": "#/properties/producedOn"
+											"scope": "#/properties/producedOn",
+											"label": "%producedOn"
 										},
 										{
 											"type": "Control",
-											"scope": "#/properties/EANCode"
+											"scope": "#/properties/EANCode",
+											"label": "%EANCode"
 										}
 									]
 								}
@@ -318,11 +346,13 @@
 									"elements": [
 										{
 											"type": "Control",
-											"scope": "#/properties/weight"
+											"scope": "#/properties/weight",
+											"label": "%weight"
 										},
 										{
 											"type": "Control",
-											"scope": "#/properties/weightIncludingPackaging"
+											"scope": "#/properties/weightIncludingPackaging",
+											"label": "%weightIncludingPackaging"
 										}
 									]
 								}
@@ -342,11 +372,13 @@
 									"elements": [
 										{
 											"type": "Control",
-											"scope": "#/properties/isPublished"
+											"scope": "#/properties/isPublished",
+											"label": "%isPublished"
 										},
 										{
 											"type": "Control",
-											"scope": "#/properties/numberOfViews"
+											"scope": "#/properties/numberOfViews",
+											"label": "%numberOfViews"
 										}
 									]
 								}
@@ -360,11 +392,13 @@
 									"elements": [
 										{
 											"type": "Control",
-											"scope": "#/properties/onlineSince"
+											"scope": "#/properties/onlineSince",
+											"label": "%onlineSince"
 										},
 										{
 											"type": "Control",
-											"scope": "#/properties/lastModifiedOn"
+											"scope": "#/properties/lastModifiedOn",
+											"label": "%lastModifiedOn"
 										}
 									]
 								}
@@ -390,11 +424,13 @@
 									"elements": [
 										{
 											"type": "Control",
-											"scope": "#/properties/auctionStarts"
+											"scope": "#/properties/auctionStarts",
+											"label": "%auctionStarts"
 										},
 										{
 											"type": "Control",
-											"scope": "#/properties/auctionEnds"
+											"scope": "#/properties/auctionEnds",
+											"label": "%auctionEnds"
 										}
 									]
 								}
@@ -414,7 +450,8 @@
 									"elements": [
 										{
 											"type": "Control",
-											"scope": "#/properties/numberOfBidders"
+											"scope": "#/properties/numberOfBidders",
+											"label": "%numberOfBidders"
 										}
 									]
 								}
