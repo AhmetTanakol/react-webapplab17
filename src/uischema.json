@@ -2,182 +2,497 @@
 	"type": "VerticalLayout",
 	"elements": [
 		{
-			"type": "HorizontalLayout",
-			"elements": [
+			"type": "Categorization",
+			"label": "Description",
+			"elements": [	
 				{
-					"type": "Control",
-					"label": "%firstname",
-					"scope": {
-						"$ref": "#/properties/firstName"
-					}
-				},
-				{
-					"type": "Control",
-					"label": "%lastname",
-					"scope": {
-						"$ref": "#/properties/lastName"
-					},
-					"options": {
-						"focus": true
-					}
-				}
-			]
-		},
-		{
-			"type": "HorizontalLayout",
-			"elements": [
-				{
-					"type": "Control",
-					"label": "%streetnumber",
-					"scope": {
-						"$ref": "#/properties/streetnumber"
-					},
-					"options": {
-						"trim": true,
-						"restrict": false
-					}
-				},
-				{
-					"type": "Control",
-					"label": "%postalcode",
-					"scope": {
-						"$ref": "#/properties/postalCode"
-					},
-					"options": {
-						"trim": true,
-						"restrict": true
-					}
-				}
-			]
-		},
-		{
-			"type": "HorizontalLayout",
-			"elements": [
-				{
-					"type": "Control",
-					"label": "%age",
-					"scope": {
-						"$ref": "#/properties/personalData/properties/age"
-					}
-				},
-				{
-					"type": "Control",
-					"label": "%dateofbirth",
-					"scope": {
-						"$ref": "#/properties/dateOfBirth"
-					}
-				}
-			]
-		},
-		{
-			"type": "HorizontalLayout",
-			"elements": [
-				{
-					"type": "Control",
-					"label": "%dateandtimeofparty",
-					"scope": {
-						"$ref": "#/properties/dateAndTimeOfParty"
-					}
-				},
-				{
-					"type": "Control",
-					"label": "%timeofarrival",
-					"scope": {
-						"$ref": "#/properties/timeOfArrival"
-					}
-				}
-			]
-		},
-		{
-			"type": "HorizontalLayout",
-			"elements": [
-				{
-					"type": "Control",
-					"label": "%height",
-					"scope": {
-						"$ref": "#/properties/personalData/properties/height"
-					}
-				},
-				{
-					"type": "Control",
-					"label": "%gender",
-					"scope": {
-						"$ref": "#/properties/gender"
-					}
-				},
-				{
-					"type": "Control",
-					"label": "%rating",
-					"scope": {
-						"$ref": "#/properties/rating"
-					}
-				}
-			]
-		},
-		{
-			"type": "HorizontalLayout",
-			"elements": [
-				{
-					"type": "Control",
-					"label": "%weight",
-					"scope": {
-						"$ref": "#/properties/weight"
-					},
-					"options": {
-						"slider": true
-					}
-				},
-				{
-					"type": "Control",
-					"label": "%drivingskill",
-					"scope": {
-						"$ref": "#/properties/drivingSkill"
-					},
-					"options": {
-						"slider": true
-					}
-				}
-			]
-		},
-		{
-			"type": "Group",
-			"label": "Address for Shipping T-Shirt",
-			"elements": [
-				{
-					"type": "HorizontalLayout",
+					"type": "Category",
+					"label": "General",
 					"elements": [
 						{
-							"type": "Control",
-							"label": "%street",
-							"scope": {
-								"$ref": "#/properties/address/properties/street"
-							}
+							"type": "VerticalLayout",
+							"elements": [
+								{
+									"type": "HorizontalLayout",
+									"elements": [
+										{
+											"type": "Control",
+											"scope": {
+												"$ref": "#/properties/name"
+											}
+										},
+										{
+											"type": "Control",
+											"scope": {
+												"$ref": "#/properties/description"
+											},
+											"options": {
+												"multi": true
+											}
+										}
+									]
+								}
+							]
 						},
 						{
-							"type": "Control",
-							"label": "%streetnumber",
-							"scope": {
-								"$ref": "#/properties/address/properties/streetnumber"
-							}
+							"type": "VerticalLayout",
+							"elements": [
+								{
+									"type": "HorizontalLayout",
+									"elements": [
+										{
+											"type": "Control",
+											"scope": {
+												"$ref": "#/properties/secondHand"
+											}
+										}
+									]
+								}
+							]
 						}
 					]
 				},
 				{
-					"type": "HorizontalLayout",
+					"type": "Category",
+					"label": "Book",
 					"elements": [
 						{
-							"type": "Control",
-							"label": "%postalcode",
-							"scope": {
-								"$ref": "#/properties/address/properties/postalCode"
-							}
+							"type": "VerticalLayout",
+							"elements": [
+								{
+									"type": "HorizontalLayout",
+									"elements": [
+										{
+											"type": "Control",
+											"scope": {
+												"$ref": "#/properties/numberOfPages"
+											}
+										},
+										{
+											"type": "Control",
+											"scope": {
+												"$ref": "#/properties/author"
+											}
+										}
+									]
+								}
+							]
 						},
 						{
-							"type": "Control",
-							"label": "%city",
-							"scope": {
-								"$ref": "#/properties/address/properties/city"
-							}
+							"type": "VerticalLayout",
+							"elements": [
+								{
+									"type": "HorizontalLayout",
+									"elements": [
+										{
+											"type": "Control",
+											"scope": {
+												"$ref": "#/properties/publisher"
+											}
+										},
+										{
+											"type": "Control",
+											"scope": {
+												"$ref": "#/properties/language"
+											}
+										}
+									]
+								}
+							]
+						},
+						{
+							"type": "VerticalLayout",
+							"elements": [
+								{
+									"type": "HorizontalLayout",
+									"elements": [
+										{
+											"type": "Control",
+											"scope": {
+												"$ref": "#/properties/ISBNnumber"
+											}
+										},
+										{
+											"type": "Control",
+											"scope": {
+												"$ref": "#/properties/ageRestriction"
+											}
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "Category",
+					"label": "Shirt",
+					"elements": [
+						{
+							"type": "VerticalLayout",
+							"elements": [
+								{
+									"type": "HorizontalLayout",
+									"elements": [
+										{
+											"type": "Control",
+											"scope": {
+												"$ref": "#/properties/size"
+											}
+										},
+										{
+											"type": "Control",
+											"scope": {
+												"$ref": "#/properties/color"
+											}
+										}
+									]
+								}
+							]
+						},
+						{
+							"type": "VerticalLayout",
+							"elements": [
+								{
+									"type": "HorizontalLayout",
+									"elements": [
+										{
+											"type": "Control",
+											"scope": {
+												"$ref": "#/properties/material"
+											}
+										},
+										{
+											"type": "Control",
+											"scope": {
+												"$ref": "#/properties/sleeves"
+											}
+										}
+									]
+								}
+							]
+						},
+						{
+							"type": "VerticalLayout",
+							"elements": [
+								{
+									"type": "HorizontalLayout",
+									"elements": [
+										{
+											"type": "Control",
+											"scope": {
+												"$ref": "#/properties/collarShape"
+											}
+										},
+										{
+											"type": "Control",
+											"scope": {
+												"$ref": "#/properties/washingNotes"
+											}
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"type": "Categorization",
+			"label": "Details",
+			"elements": [
+				{
+					"type": "Category",
+					"label": "Pricing",
+					"elements": [
+						{
+							"type": "VerticalLayout",
+							"elements": [
+								{
+									"type": "HorizontalLayout",
+									"elements": [
+										{
+											"type": "Control",
+											"scope": {
+												"$ref": "#/properties/price"
+											}
+										},
+										{
+											"type": "Control",
+											"scope": {
+												"$ref": "#/properties/shippingPrice"
+											}
+										}
+									]
+								}
+							]
+						},
+						{
+							"type": "VerticalLayout",
+							"elements": [
+								{
+									"type": "HorizontalLayout",
+									"elements": [
+										{
+											"type": "Control",
+											"scope": {
+												"$ref": "#/properties/generalDiscount"
+											}
+										},
+										{
+											"type": "Control",
+											"scope": {
+												"$ref": "#/properties/discountWithPromotionCode"
+											}
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "Category",
+					"label": "Delivery",
+					"elements": [
+						{
+							"type": "VerticalLayout",
+							"elements": [
+								{
+									"type": "HorizontalLayout",
+									"elements": [
+										{
+											"type": "Control",
+											"scope": {
+												"$ref": "#/properties/deliverableOn"
+											}
+										},
+										{
+											"type": "Control",
+											"scope": {
+												"$ref": "#/properties/deliveryOptions"
+											}
+										}
+									]
+								}
+							]
+						},
+						{
+							"type": "VerticalLayout",
+							"elements": [
+								{
+									"type": "HorizontalLayout",
+									"elements": [
+										{
+											"type": "Control",
+											"scope": {
+												"$ref": "#/properties/internationalShipping"
+											}
+										},
+										{
+											"type": "Control",
+											"scope": {
+												"$ref": "#/properties/soldOut"
+											}
+										}
+									]
+								}
+							]
+						},
+						{
+							"type": "VerticalLayout",
+							"elements": [
+								{
+									"type": "HorizontalLayout",
+									"elements": [
+										{
+											"type": "Control",
+											"scope": {
+												"$ref": "#/properties/itemsInStock"
+											}
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "Category",
+					"label": "Manufacturer",
+					"elements": [
+						{
+							"type": "VerticalLayout",
+							"elements": [
+								{
+									"type": "HorizontalLayout",
+									"elements": [
+										{
+											"type": "Control",
+											"scope": {
+												"$ref": "#/properties/brand"
+											}
+										},
+										{
+											"type": "Control",
+											"scope": {
+												"$ref": "#/properties/bestBefore"
+											}
+										}
+									]
+								}
+							]
+						},
+						{
+							"type": "VerticalLayout",
+							"elements": [
+								{
+									"type": "HorizontalLayout",
+									"elements": [
+										{
+											"type": "Control",
+											"scope": {
+												"$ref": "#/properties/producedOn"
+											}
+										},
+										{
+											"type": "Control",
+											"scope": {
+												"$ref": "#/properties/EANCode"
+											}
+										}
+									]
+								}
+							]
+						},
+						{
+							"type": "VerticalLayout",
+							"elements": [
+								{
+									"type": "HorizontalLayout",
+									"elements": [
+										{
+											"type": "Control",
+											"scope": {
+												"$ref": "#/properties/weight"
+											}
+										},
+										{
+											"type": "Control",
+											"scope": {
+												"$ref": "#/properties/weightIncludingPackaging"
+											}
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "Category",
+					"label": "Publishing",
+					"elements": [
+						{
+							"type": "VerticalLayout",
+							"elements": [
+								{
+									"type": "HorizontalLayout",
+									"elements": [
+										{
+											"type": "Control",
+											"scope": {
+												"$ref": "#/properties/isPublished"
+											}
+										},
+										{
+											"type": "Control",
+											"scope": {
+												"$ref": "#/properties/numberOfViews"
+											}
+										}
+									]
+								}
+							]
+						},
+						{
+							"type": "VerticalLayout",
+							"elements": [
+								{
+									"type": "HorizontalLayout",
+									"elements": [
+										{
+											"type": "Control",
+											"scope": {
+												"$ref": "#/properties/onlineSince"
+											}
+										},
+										{
+											"type": "Control",
+											"scope": {
+												"$ref": "#/properties/lastModifiedOn"
+											}
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"type": "Categorization",
+			"label": "Auction",
+			"elements": [
+				{
+					"type": "Category",
+					"label": "Time",
+					"elements": [
+						{
+							"type": "VerticalLayout",
+							"elements": [
+								{
+									"type": "HorizontalLayout",
+									"elements": [
+										{
+											"type": "Control",
+											"scope": {
+												"$ref": "#/properties/auctionStarts"
+											}
+										},
+										{
+											"type": "Control",
+											"scope": {
+												"$ref": "#/properties/auctionEnds"
+											}
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "Category",
+					"label": "Bids",
+					"elements": [
+						{
+							"type": "VerticalLayout",
+							"elements": [
+								{
+									"type": "HorizontalLayout",
+									"elements": [
+										{
+											"type": "Control",
+											"scope": {
+												"$ref": "#/properties/numberOfBidders"
+											}
+										}
+									]
+								}
+							]
 						}
 					]
 				}

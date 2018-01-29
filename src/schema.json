@@ -1,89 +1,133 @@
 {
 	"type": "object",
 	"properties": {
-		"firstName": {
-			"type": "string",
-			"minLength": 2,
-			"maxLength": 20,
-			"description": "%namedescription"
+		"name": {
+			"type": "string"
 		},
-		"lastName": {
-			"type": "string",
-			"minLength": 5,
-			"maxLength": 15
-		},
-		"personalData": {
-			"type": "object",
-			"properties": {
-				"age": {
-					"type": "integer",
-					"minimum": 18,
-					"maximum": 100
-				},
-				"height": {
-					"type": "number"
-				}
-			},
-			"required": ["age", "height"]
-		},
-		"gender": {
-			"type": "string",
-			"enum": [
-				"Male",
-				"Female",
-				"Undisclosed"
-			]
-		},
-		"dateOfBirth": {
+		"bestBefore": {
 			"type": "string",
 			"format": "date"
 		},
-		"weight": {
-			"type": "number",
-			"minimum": 1,
-			"maximum": 100
+		"size": {
+			"type": "string",
+			"enum": ["S", "M", "L", "XL", "XXL"]
 		},
-		"drivingSkill": {
-			"type": "integer",
-			"minimum": 1,
-			"maximum": 10
+		"color": {
+			"type": "string",
+			"enum": ["black", "grey"]
 		},
-		"rating": {
+		"itemsInStock": {
 			"type": "integer"
 		},
-		"address": {
-			"type": "object",
-			"properties": {
-				"street": {
-					"type": "string"
-				},
-				"streetnumber": {
-					"type": "string"
-				},
-				"postalCode": {
-					"type": "string"
-				},
-				"city": {
-					"type": "string"
-				}
-			}
-		},
-		"dateAndTimeOfParty": {
+		"auctionEnds": {
 			"type": "string",
 			"format": "date-time"
 		},
-		"timeOfArrival": {
-			"type": "string",
-			"format": "time"
+		"numberOfBidders": {
+			"type": "integer"
 		},
-		"streetnumber": {
-			"type": "string",
-			"maxLength": 4
+		"description": {
+			"type": "string"
 		},
-		"postalCode": {
+		"isPublished": {
+			"type": "boolean"
+		},
+		"auctionStarts": {
 			"type": "string",
-			"maxLength": 5
+			"format": "date-time"
+		},
+		"EANCode": {
+			"type": "string"
+		},
+		"author": {
+			"type": "string"
+		},
+		"numberOfPages": {
+			"type": "integer"
+		},
+		"price": {
+			"type": "string"
+		},
+		"deliverableOn": {
+			"type": "string",
+			"format": "date"
+		},
+		"ISBNnumber": {
+			"type": "string"
+		},
+		"language": {
+			"type": "string"
+		},
+		"publisher": {
+			"type": "string"
+		},
+		"material": {
+			"type": "string",
+			"enum": ["cotton", "polyester", "silk", "mixed"]
+		},
+		"washingNotes": {
+			"type": "string"
+		},
+		"deliveryOptions": {
+			"type:": "string",
+			"enum" : ["regular", "express"]
+		},
+		"brand": {
+			"type:": "string"
+		},
+		"internationalShipping": {
+			"type:": "boolean"
+		},
+		"soldOut": {
+			"type:": "boolean"
+		},
+		"sleeves": {
+			"type:": "string",
+			"enum" : ["short", "long"]
+		},
+		"secondHand": {
+			"type:": "boolean"
+		},
+		"collarShape": {
+			"type:": "string",
+			"enum" : ["round", "regular"]
+		},
+		"onlineSince": {
+			"type:": "string",
+			"format" : "date-time"
+		},
+		"producedOn": {
+			"type:": "string",
+			"format" : "date"
+		},
+		"ageRestriction": {
+			"type:": "integer"
+		},
+		"weight": {
+			"type:": "number"
+		},
+		"weightIncludingPackaging": {
+			"type:": "number"
+		},
+		"lastModifiedOn": {
+			"type:": "string",
+			"format" : "date-time"
+		},
+		"shippingPrice": {
+			"type:": "string"
+		},
+		"generalDiscount": {
+			"type:": "number",
+			"minimum": 0,
+			"maximum": 1
+		},
+		"discountWithPromotionCode": {
+			"type:": "number",
+			"minimum": 0,
+			"maximum": 1
+		},
+		"numberOfViews": {
+			"type:": "integer"
 		}
-	},
-	"required": ["firstName", "lastName", "age", "gender"]
+	}
 }

@@ -6,58 +6,99 @@ import App from './App';
 import registerServiceWorker from './registerServiceWorker';
 import schema from './schema.json';
 import uischema from './uischema.json';
-import { initJsonFormsStore } from '@jsonforms/core';
+import { createJsonFormsStore } from './store';
 
 const translations = {
   'en-US': {
-    firstname: 'First Name',
-    lastname: 'Last Name',
-    streetnumber: 'Street Number',
-    postalcode: 'Postal Code',
-    age: 'Age',
-    dateofbirth: 'Date Of Birth',
-    dateandtimeofparty: 'Date and Time of Party',
-    timeofarrival: 'Time of Arrival',
-    height: 'Height',
-    gender: 'Gender',
-    rating: 'Rating',
-    committer: 'Committer',
+    name: 'Name',
+    description: 'Description',
+    secondHand: 'Second hand',
+    numberOfPages: 'Number of pages',
+    author: 'Author',
+    publisher: 'Publisher',
+    language: 'Language',
+    ISBNnumber: 'ISBN number',
+    ageRestriction: 'Age restriction',
+    size: 'Size',
+    color: 'Color',
+    material: 'Material',
+    sleeves: 'Sleeves',
+    collarShape: 'Collar shape',
+    washingNotes: 'Washing notes',
+    price: 'Price',
+    shippingPrice: 'Shipping price',
+    generalDiscount: 'General discount',
+    discountWithPromotionCode: 'Discount with promotion code',
+    deliverableOn: 'Deliverable on',
+    deliveryOptions: 'Delivery options',
+    internationalShipping: 'International shipping',
+    soldOut: 'Sold out',
+    itemsInStock: 'Items in stock',
+    brand: 'Brand',
+    bestBefore: 'Best before',
+    producedOn: 'Produced on',
+    EANCode: 'EAN code',
     weight: 'Weight',
-    drivingskill: 'Driving Skill',
-    street: 'Street',
-    city: 'City',
-    namedescription: 'Enter your first name'
+    weightIncludingPackaging: 'Weight including packaging',
+    isPublished: 'Is published',
+    numberOfViews: 'Number of views',
+    onlineSince: 'Online since',
+    lastModifiedOn: 'Last modified on',
+    auctionStarts: 'Auction starts',
+    auctionEnds: 'Auction ends',
+    numberOfBidders: 'Number of bidders',
+    secondHandDescription: 'Whether this item is second-hand or new'
   },
   'de-DE': {
-    firstname: 'Vorname',
-    lastname: 'Name',
-    streetnumber: 'Hausnummer',
-    postalcode: 'Postleitzahl',
-    age: 'Alter',
-    dateofbirth: 'Geburtsdatum',
-    dateandtimeofparty: 'Datum und Uhrzeit der Party',
-    timeofarrival: 'Ankunftszeit',
-    height: 'Höhe',
-    gender: 'Geschlecht',
-    rating: 'Bewertung',
-    committer: 'Vermittler',
+    name: 'Name',
+    description: 'Beschreibung',
+    secondHand: 'Gebraucht',
+    numberOfPages: 'Anzahl der Seiten',
+    author: 'Autor',
+    publisher: 'Verlag',
+    language: 'Sprache',
+    ISBNnumber: 'ISBN-Nummer',
+    ageRestriction: 'Altersbeschränkung',
+    size: 'Größe',
+    color: 'Farbe',
+    material: 'Material',
+    sleeves: 'Ärmel',
+    collarShape: 'Kragenform',
+    washingNotes: 'Waschhinweise',
+    price: 'Preis',
+    shippingPrice: 'Versandkosten',
+    generalDiscount: 'Allgemeiner Rabatt',
+    discountWithPromotionCode: 'Rabatt mit Gutscheincode',
+    deliverableOn: 'Lieferbar am',
+    deliveryOptions: 'Lieferoptionen',
+    internationalShipping: 'Internationale Lieferung',
+    soldOut: 'Ausverkauft',
+    itemsInStock: 'Stückzahl auf Lager',
+    brand: 'Marke',
+    bestBefore: 'Mindestens haltbar bis',
+    producedOn: 'Hergestellt am',
+    EANCode: 'EAN-Code',
     weight: 'Gewicht',
-    drivingskill: 'Fahrkünste',
-    street: 'Strasse',
-    city: 'Stadt',
-    namedescription: 'Geben Sie Ihren Vornamen ein'
+    weightIncludingPackaging: 'Gewicht inkl. Verpackung',
+    isPublished: 'Veröffentlicht',
+    numberOfViews: 'Anzahl der Seitenaufrufe',
+    onlineSince: 'Online seit',
+    lastModifiedOn: 'Zuletzt bearbeitet am',
+    auctionStarts: 'Auktion beginnt am',
+    auctionEnds: 'Auktion endet am',
+    numberOfBidders: 'Anzahl der Gebote',
+    secondHandDescription: 'Ob dieser Artikel gebraucht oder neu ist'
   }
 };
 
 const initialState = {
   data: {
-    firstName: "Max", personalData: {}
   },
   schema: schema,
   uischema: uischema,
   translations: translations
 };
-const store = initJsonFormsStore(initialState);
+const store = createJsonFormsStore(initialState);
 
 ReactDOM.render(
   <Provider store={store}>

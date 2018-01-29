@@ -3,13 +3,14 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@jsonforms/core": "file:jsonforms-core-2.0.0-beta.5.tgz",
-    "@jsonforms/material-renderers": "file:jsonforms-material-renderers-2.0.0-beta.5.tgz",
+    "@jsonforms/core": "file:jsonforms-core-2.0.0-rc.0.tgz",
+    "@jsonforms/material-renderers": "file:jsonforms-material-renderers-2.0.0-rc.0.tgz",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "react-redux": "^5.0.6",
     "react-scripts": "1.0.17",
-    "redux": "^3.7.2"
+    "redux": "^3.7.2",
+    "redux-thunk": "^2.2.0"
   },
   "scripts": {
     "start": "react-scripts start",
