@@ -70,65 +70,65 @@
 			"type": "string"
 		},
 		"deliveryOptions": {
-			"type:": "string",
+			"type": "string",
 			"enum" : ["regular", "express"]
 		},
 		"brand": {
-			"type:": "string"
+			"type": "string"
 		},
 		"internationalShipping": {
-			"type:": "boolean"
+			"type": "boolean"
 		},
 		"soldOut": {
-			"type:": "boolean"
+			"type": "boolean"
 		},
 		"sleeves": {
-			"type:": "string",
+			"type": "string",
 			"enum" : ["short", "long"]
 		},
 		"secondHand": {
-			"type:": "boolean"
+			"type": "boolean"
 		},
 		"collarShape": {
-			"type:": "string",
+			"type": "string",
 			"enum" : ["round", "regular"]
 		},
 		"onlineSince": {
-			"type:": "string",
+			"type": "string",
 			"format" : "date-time"
 		},
 		"producedOn": {
-			"type:": "string",
+			"type": "string",
 			"format" : "date"
 		},
 		"ageRestriction": {
-			"type:": "integer"
+			"type": "integer"
 		},
 		"weight": {
-			"type:": "number"
+			"type": "number"
 		},
 		"weightIncludingPackaging": {
-			"type:": "number"
+			"type": "number"
 		},
 		"lastModifiedOn": {
-			"type:": "string",
+			"type": "string",
 			"format" : "date-time"
 		},
 		"shippingPrice": {
-			"type:": "string"
+			"type": "string"
 		},
 		"generalDiscount": {
-			"type:": "number",
+			"type": "number",
 			"minimum": 0,
 			"maximum": 1
 		},
 		"discountWithPromotionCode": {
-			"type:": "number",
+			"type": "number",
 			"minimum": 0,
 			"maximum": 1
 		},
 		"numberOfViews": {
-			"type:": "integer"
+			"type": "integer"
 		}
 	},
 	"required": ["name", "description"]
