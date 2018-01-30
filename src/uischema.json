@@ -18,14 +18,18 @@
 										{
 											"type": "Control",
 											"scope":  "#/properties/name",
-											"label": "%name"
+											"label": "%name",
+											"options": {
+												"displayError": true
+											}
 										},
 										{
 											"type": "Control",
 											"scope": "#/properties/description",
 											"label": "%description",
 											"options": {
-												"multi": true
+												"multi": true,
+												"displayError": false
 											}
 										}
 									]
