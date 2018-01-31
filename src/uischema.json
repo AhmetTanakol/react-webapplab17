@@ -3,11 +3,11 @@
 	"elements": [
 		{
 			"type": "Categorization",
-			"label": "%tabDescription",
+			"label": "Description",
 			"elements": [
 				{
 					"type": "Category",
-					"label": "%catGeneral",
+					"label": "General",
 					"elements": [
 						{
 							"type": "VerticalLayout",
@@ -55,7 +55,7 @@
 				},
 				{
 					"type": "Category",
-					"label": "%catBook",
+					"label": "Book",
 					"elements": [
 						{
 							"type": "VerticalLayout",
@@ -121,7 +121,7 @@
 				},
 				{
 					"type": "Category",
-					"label": "%catShirt",
+					"label": "Shirt",
 					"elements": [
 						{
 							"type": "VerticalLayout",
@@ -189,11 +189,11 @@
 		},
 		{
 			"type": "Categorization",
-			"label": "%tabDetails",
+			"label": "Details",
 			"elements": [
 				{
 					"type": "Category",
-					"label": "%catPricing",
+					"label": "Pricing",
 					"elements": [
 						{
 							"type": "VerticalLayout",
@@ -239,7 +239,7 @@
 				},
 				{
 					"type": "Category",
-					"label": "%catDelivery",
+					"label": "Delivery",
 					"elements": [
 						{
 							"type": "VerticalLayout",
@@ -300,7 +300,7 @@
 				},
 				{
 					"type": "Category",
-					"label": "%catManufacturer",
+					"label": "Manufacturer",
 					"elements": [
 						{
 							"type": "VerticalLayout",
@@ -366,7 +366,7 @@
 				},
 				{
 					"type": "Category",
-					"label": "%catPublishing",
+					"label": "Publishing",
 					"elements": [
 						{
 							"type": "VerticalLayout",
@@ -414,11 +414,11 @@
 		},
 		{
 			"type": "Categorization",
-			"label": "%tabAuction",
+			"label": "Auction",
 			"elements": [
 				{
 					"type": "Category",
-					"label": "%catTime",
+					"label": "Time",
 					"elements": [
 						{
 							"type": "VerticalLayout",
@@ -444,7 +444,7 @@
 				},
 				{
 					"type": "Category",
-					"label": "%catBids",
+					"label": "Bids",
 					"elements": [
 						{
 							"type": "VerticalLayout",
