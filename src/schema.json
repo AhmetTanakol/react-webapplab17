@@ -7,7 +7,7 @@
 		},
 		"bestBefore": {
 			"type": "string",
-			"format": "date"
+			"format": "date-time"
 		},
 		"size": {
 			"type": "string",
@@ -51,7 +51,7 @@
 		},
 		"deliverableOn": {
 			"type": "string",
-			"format": "date"
+			"format": "date-time"
 		},
 		"ISBNnumber": {
 			"type": "string"
@@ -99,7 +99,7 @@
 		},
 		"producedOn": {
 			"type": "string",
-			"format" : "date"
+			"format" : "date-time"
 		},
 		"ageRestriction": {
 			"type": "integer"
