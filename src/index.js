@@ -149,7 +149,7 @@ store.dispatch({
     bestBefore: '2019-04-01T00:00:00+00:00',
     size: 'M',
     color: 'grey',
-    itemsInStock: '9',
+    itemsInStock: 9,
     auctionEnds: '2018-02-19T22:14:51+00:00',
     numberOfBidders: 6,
     description: 'All cool nerds wear this shirt.',
