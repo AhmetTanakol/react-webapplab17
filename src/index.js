@@ -180,7 +180,8 @@ store.dispatch({
     shippingPrice: '2.99',
     generalDiscount: 0.1,
     discountWithPromotionCode: 0.3,
-    numberOfViews: 327
+    numberOfViews: 327,
+    washingNotes: 'Wash at max 40° C'
   },
   schema,
   uischema
