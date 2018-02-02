@@ -2,8 +2,7 @@
 	"type": "object",
 	"properties": {
 		"name": {
-			"type": "string",
-			"description": "%namedescription"
+			"type": "string"
 		},
 		"bestBefore": {
 			"type": "string",

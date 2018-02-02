@@ -18,7 +18,6 @@
 										{
 											"type": "Control",
 											"scope":  "#/properties/name",
-											"label": "%name",
 											"options": {
 												"displayError": true
 											}
@@ -26,7 +25,6 @@
 										{
 											"type": "Control",
 											"scope": "#/properties/description",
-											"label": "%description",
 											"options": {
 												"multi": true,
 												"displayError": false
@@ -44,8 +42,7 @@
 									"elements": [
 										{
 											"type": "Control",
-											"scope": "#/properties/secondHand",
-											"label": "%secondHand"
+											"scope": "#/properties/secondHand"
 										}
 									]
 								}
@@ -65,13 +62,11 @@
 									"elements": [
 										{
 											"type": "Control",
-											"scope": "#/properties/numberOfPages",
-											"label": "%numberOfPages"
+											"scope": "#/properties/numberOfPages"
 										},
 										{
 											"type": "Control",
-											"scope": "#/properties/author",
-											"label": "%author"
+											"scope": "#/properties/author"
 										}
 									]
 								}
@@ -85,13 +80,11 @@
 									"elements": [
 										{
 											"type": "Control",
-											"scope": "#/properties/publisher",
-											"label": "%publisher"
+											"scope": "#/properties/publisher"
 										},
 										{
 											"type": "Control",
-											"scope": "#/properties/language",
-											"label": "%language"
+											"scope": "#/properties/language"
 										}
 									]
 								}
@@ -105,13 +98,11 @@
 									"elements": [
 										{
 											"type": "Control",
-											"scope": "#/properties/ISBNnumber",
-											"label": "%ISBNnumber"
+											"scope": "#/properties/ISBNnumber"
 										},
 										{
 											"type": "Control",
-											"scope": "#/properties/ageRestriction",
-											"label": "%ageRestriction"
+											"scope": "#/properties/ageRestriction"
 										}
 									]
 								}
@@ -131,13 +122,11 @@
 									"elements": [
 										{
 											"type": "Control",
-											"scope": "#/properties/size",
-											"label": "%size"
+											"scope": "#/properties/size"
 										},
 										{
 											"type": "Control",
-											"scope": "#/properties/color",
-											"label": "%color"
+											"scope": "#/properties/color"
 										}
 									]
 								}
@@ -151,13 +140,11 @@
 									"elements": [
 										{
 											"type": "Control",
-											"scope": "#/properties/material",
-											"label": "%material"
+											"scope": "#/properties/material"
 										},
 										{
 											"type": "Control",
-											"scope": "#/properties/sleeves",
-											"label": "%sleeves"
+											"scope": "#/properties/sleeves"
 										}
 									]
 								}
@@ -171,13 +158,11 @@
 									"elements": [
 										{
 											"type": "Control",
-											"scope": "#/properties/collarShape",
-											"label": "%collarShape"
+											"scope": "#/properties/collarShape"
 										},
 										{
 											"type": "Control",
-											"scope": "#/properties/washingNotes",
-											"label": "%washingNotes"
+											"scope": "#/properties/washingNotes"
 										}
 									]
 								}
@@ -203,13 +188,11 @@
 									"elements": [
 										{
 											"type": "Control",
-											"scope": "#/properties/price",
-											"label": "%price"
+											"scope": "#/properties/price"
 										},
 										{
 											"type": "Control",
-											"scope": "#/properties/shippingPrice",
-											"label": "%shippingPrice"
+											"scope": "#/properties/shippingPrice"
 										}
 									]
 								}
@@ -223,13 +206,11 @@
 									"elements": [
 										{
 											"type": "Control",
-											"scope": "#/properties/generalDiscount",
-											"label": "%generalDiscount"
+											"scope": "#/properties/generalDiscount"
 										},
 										{
 											"type": "Control",
-											"scope": "#/properties/discountWithPromotionCode",
-											"label": "%discountWithPromotionCode"
+											"scope": "#/properties/discountWithPromotionCode"
 										}
 									]
 								}
@@ -249,13 +230,11 @@
 									"elements": [
 										{
 											"type": "Control",
-											"scope": "#/properties/deliverableOn",
-											"label": "%deliverableOn"
+											"scope": "#/properties/deliverableOn"
 										},
 										{
 											"type": "Control",
-											"scope": "#/properties/deliveryOptions",
-											"label": "%deliveryOptions"
+											"scope": "#/properties/deliveryOptions"
 										}
 									]
 								}
@@ -269,13 +248,11 @@
 									"elements": [
 										{
 											"type": "Control",
-											"scope": "#/properties/internationalShipping",
-											"label": "%internationalShipping"
+											"scope": "#/properties/internationalShipping"
 										},
 										{
 											"type": "Control",
-											"scope": "#/properties/soldOut",
-											"label": "%soldOut"
+											"scope": "#/properties/soldOut"
 										}
 									]
 								}
@@ -289,8 +266,7 @@
 									"elements": [
 										{
 											"type": "Control",
-											"scope": "#/properties/itemsInStock",
-											"label": "%itemsInStock"
+											"scope": "#/properties/itemsInStock"
 										}
 									]
 								}
@@ -310,13 +286,11 @@
 									"elements": [
 										{
 											"type": "Control",
-											"scope": "#/properties/brand",
-											"label": "%brand"
+											"scope": "#/properties/brand"
 										},
 										{
 											"type": "Control",
-											"scope": "#/properties/bestBefore",
-											"label": "%bestBefore"
+											"scope": "#/properties/bestBefore"
 										}
 									]
 								}
@@ -330,13 +304,11 @@
 									"elements": [
 										{
 											"type": "Control",
-											"scope": "#/properties/producedOn",
-											"label": "%producedOn"
+											"scope": "#/properties/producedOn"
 										},
 										{
 											"type": "Control",
-											"scope": "#/properties/EANCode",
-											"label": "%EANCode"
+											"scope": "#/properties/EANCode"
 										}
 									]
 								}
@@ -350,13 +322,11 @@
 									"elements": [
 										{
 											"type": "Control",
-											"scope": "#/properties/weight",
-											"label": "%weight"
+											"scope": "#/properties/weight"
 										},
 										{
 											"type": "Control",
-											"scope": "#/properties/weightIncludingPackaging",
-											"label": "%weightIncludingPackaging"
+											"scope": "#/properties/weightIncludingPackaging"
 										}
 									]
 								}
@@ -376,13 +346,11 @@
 									"elements": [
 										{
 											"type": "Control",
-											"scope": "#/properties/isPublished",
-											"label": "%isPublished"
+											"scope": "#/properties/isPublished"
 										},
 										{
 											"type": "Control",
-											"scope": "#/properties/numberOfViews",
-											"label": "%numberOfViews"
+											"scope": "#/properties/numberOfViews"
 										}
 									]
 								}
@@ -396,13 +364,11 @@
 									"elements": [
 										{
 											"type": "Control",
-											"scope": "#/properties/onlineSince",
-											"label": "%onlineSince"
+											"scope": "#/properties/onlineSince"
 										},
 										{
 											"type": "Control",
-											"scope": "#/properties/lastModifiedOn",
-											"label": "%lastModifiedOn"
+											"scope": "#/properties/lastModifiedOn"
 										}
 									]
 								}
@@ -428,13 +394,11 @@
 									"elements": [
 										{
 											"type": "Control",
-											"scope": "#/properties/auctionStarts",
-											"label": "%auctionStarts"
+											"scope": "#/properties/auctionStarts"
 										},
 										{
 											"type": "Control",
-											"scope": "#/properties/auctionEnds",
-											"label": "%auctionEnds"
+											"scope": "#/properties/auctionEnds"
 										}
 									]
 								}
@@ -454,8 +418,7 @@
 									"elements": [
 										{
 											"type": "Control",
-											"scope": "#/properties/numberOfBidders",
-											"label": "%numberOfBidders"
+											"scope": "#/properties/numberOfBidders"
 										}
 									]
 								}
